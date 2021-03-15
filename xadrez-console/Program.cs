@@ -2,6 +2,7 @@
 using tabuleiro;
 using xadrez;
 
+
 namespace xadrez_console
 {
     class Program
@@ -17,10 +18,7 @@ namespace xadrez_console
                     try
                     {
                         Console.Clear();
-                        Tela.ImprimirTabuleiro(partida.Tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno : " + partida.Turno);
-                        Console.Write("Aguardando jogada: " + partida.JogadorAtual);
+                        Tela.imprimirPartida(partida);
 
                         Console.WriteLine();
                         Console.Write("Digite a posicao de origem: ");
